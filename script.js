@@ -11,29 +11,29 @@ var specialCheck;
 
 //function to determine length of password
 function determineLength(){
-  passwordLength = prompt("Choose how many characters long you would like your password to be (between 8-128 characters): ");
+  passwordLength = prompt("Choose how many characters long you would like your password to be (between 8-99 characters): ");
 
   if(passwordLength<8){
     alert("Passwrod length must be at least 8 charcters");
     determineLength();
   }
-  else if(passwordLength>128){
-    alert("Password length must be no more than 128 charcaters");
+  else if(passwordLength>99){
+    alert("Password length must be no more than 99 charcaters");
     determineLength();
   }
   else if(isNaN(passwordLength)){
-    alert("Passwrod length must be a number between 8-128 characters");
+    alert("Passwrod length must be a number between 8-99 characters");
     determineLength();
   }
   else{
-    alert("The next three sections will ask you what types of characters you would like to include in your password. \nIf 'No' is selected for all, your passwrod will only be lowercase letters.")
+    alert("The next 3 sections will ask you what types of characters you would like to include in your password. \nIf 'No' is selected for all queations, your passwrod will ONLY be lowercase letters.")
   }
   return passwordLength;
 }
 
 //function to determine if user wants to use uppercase in password
 function determineUppercase(){
-  uppercaseCheck = prompt("Do you want to include uppercase letters in your password? \n(yes or no)");
+  uppercaseCheck = prompt("Do you want to include UPPERCASE letters in your password? \n(yes or no)");
     uppercaseCheck = uppercaseCheck.toLowerCase();
 
   if(uppercaseCheck === null || uppercaseCheck === ""){
@@ -57,7 +57,7 @@ function determineUppercase(){
 
 //function to determine if user want to include number is password
 function determineNumbers(){
-  numberCheck = prompt("Do you want to include numbers in your password? \n(yes or no)");
+  numberCheck = prompt("Do you want to include NUMBERS in your password? \n(yes or no)");
   numberCheck = numberCheck.toLowerCase();
 
   if(numberCheck === null || numberCheck === ""){
@@ -81,7 +81,7 @@ function determineNumbers(){
 
 //function to determine if user wants to include special characters to password
 function determineSpecial(){
-  specialCheck = prompt("Do you want to include special characters in your password? \n(yes or no)");
+  specialCheck = prompt("Do you want to include SPECIAL CHARACTERS in your password? \n(yes or no)");
   specialCheck = specialCheck.toLowerCase();
 
   if(specialCheck === null || specialCheck === ""){
