@@ -22,4 +22,5 @@ THEN the password is either displayed in an alert or written to the page
 I have created a random password generator using Javascript. First, click the "generate password" button. You are then asked a serious of questions asking what you would like to have included or excluded from your preferred password.
 
 Screenshots:
-![Screenshot](home.png)
+![homepage](./images/home.png "homepage")
+
